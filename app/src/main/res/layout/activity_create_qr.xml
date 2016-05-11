@@ -1,0 +1,45 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.hp.dictionarpractice1.NewListActivity"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:id="@+id/mainframelayout">
+
+    <include
+        layout="@layout/app_bar"
+        android:id="@+id/toolbar" />
+
+
+    <com.melnykov.fab.FloatingActionButton
+        android:id="@+id/fab_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_image_camera_alt"
+        fab:fab_colorNormal="@color/accent"
+
+
+        />
+
+    <ImageView
+        android:id="@+id/my_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="57dip"
+        android:elevation="2dip"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="left|top"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+</FrameLayout>

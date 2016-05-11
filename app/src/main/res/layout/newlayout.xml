@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:focusableInTouchMode="true"
+    android:id="@+id/qrgenerateframelayout"
+    android:background="@color/backgroundColor"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="3dp"
+            android:background="@color/primary"
+            android:minHeight="?attr/actionBarSize"
+            app:popupTheme="@style/Theme.AppCompat.Light.DarkActionBar"
+            app:theme="@style/CustomToolbar"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <ImageButton
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="right|top"
+                    android:src="@drawable/ic_hardware_keyboard_backspace"
+                    android:background="@android:color/transparent"
+                    android:id="@+id/Back"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+
+                <ImageButton
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/ic_image_edit"
+                    android:background="@android:color/transparent"
+                    android:id="@+id/Edit"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+
+
+        <com.melnykov.fab.ObservableScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView"
+            >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageFramelayout"
+                    >
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:id="@+id/defaultImage"
+                                android:layout_width="match_parent"
+                                android:layout_height="320dp"
+                                android:src="@drawable/officeimage"
+                                />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_gravity="left|bottom"
+                                android:layout_marginLeft="120dp"
+
+                                >
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:hint="Name"
+                                    android:textSize="24sp"
+                                    android:textColorHint="@color/text_color"
+                                    android:textColor="@color/text_color"
+                                    android:paddingLeft="16dp"
+                                    android:paddingTop="8dp"
+                                    android:paddingRight="36dp"
+                                    android:paddingBottom="8dp"
+                                    android:id="@+id/uName"
+                                    android:text="Abeer Upadhyay"
+                                    >
+                                </TextView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:text="Email_Id"
+                                    android:id="@+id/uEmail"
+                                    android:textColor="@color/text_color"
+                                    />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:text="Mobile No"
+                                    android:id="@+id/uMobile"
+                                    android:textColor="@color/text_color"
+                                    />
+                            </LinearLayout>
+
+
+                        </FrameLayout>
+
+
+
+                        <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:src="@drawable/defaultuserimage"
+                                android:layout_marginTop="-50dp"
+                                android:layout_marginBottom="-50dp"
+                                android:id="@+id/userPerson"
+                                android:layout_marginLeft="20dp"/>
+
+
+
+
+                        <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="50dp"
+                                >
+
+                                <android.support.design.widget.TextInputLayout
+                                     android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="48dp"
+                                    android:layout_marginTop="2dp"
+                                    android:textColorHint="@color/text_hint"
+
+
+                                    >
+                                    <android.support.v7.widget.AppCompatEditText
+                                        android:layout_width="match_parent"
+                                        android:layout_height="48dp"
+                                        android:layout_marginRight="12dp"
+                                        android:id="@+id/editDesignation"
+                                        android:hint="Designation,Company Name"
+                                        android:textColor="@drawable/edittextselector"
+
+                                        >
+                                    </android.support.v7.widget.AppCompatEditText>
+
+                                </android.support.design.widget.TextInputLayout>
+                                    <ImageView
+                                        android:layout_width="48dp"
+                                        android:layout_height="48dp"
+                                        android:layout_marginTop="5dp"
+                                        android:padding="15dp"
+                                        android:src="@drawable/ic_action_assignment_ind"
+                                        android:background="@android:color/transparent"
+                                        android:layout_gravity="left|center_vertical" />
+                                </FrameLayout>
+
+
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <android.support.design.widget.TextInputLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="48dp"
+                                        android:textColorHint="@color/text_hint"
+                                        >
+                                        <EditText
+                                            android:layout_width="match_parent"
+                                            android:layout_height="48dp"
+                                            android:layout_marginRight="12dp"
+                                            android:hint="Email ID"
+                                            android:id="@+id/editEmail"
+                                            android:textColor="@drawable/edittextselector"
+
+                                            />
+                                    </android.support.design.widget.TextInputLayout>
+
+                                    <ImageView
+                                        android:layout_width="48dp"
+                                        android:layout_height="48dp"
+                                        android:layout_marginTop="5dp"
+                                        android:padding="15dp"
+                                        android:src="@drawable/ic_communication_email"
+                                        android:background="@android:color/transparent"
+                                        android:layout_gravity="left|top" />
+                                </FrameLayout>
+
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    >
+                                    <android.support.design.widget.TextInputLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="48dp"
+                                        android:textColorHint="@color/text_hint"
+                                        >
+                                        <EditText
+                                            android:layout_width="match_parent"
+                                            android:layout_height="48dp"
+                                            android:layout_marginRight="12dp"
+                                            android:hint="Mobile Number"
+                                            android:id="@+id/editMobile"
+                                            android:textColor="@drawable/edittextselector"
+                                            />
+                                    </android.support.design.widget.TextInputLayout>
+
+                                    <ImageView
+                                        android:layout_width="48dp"
+                                        android:layout_height="48dp"
+                                        android:layout_marginTop="5dp"
+                                        android:padding="15dp"
+                                        android:src="@drawable/ic_communication_call"
+                                        android:background="@android:color/transparent"
+                                        android:layout_gravity="left|top" />
+                                </FrameLayout>
+
+
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <android.support.design.widget.TextInputLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="48dp"
+                                        android:textColorHint="@color/text_hint"
+                                        >
+                                        <EditText
+                                            android:layout_width="match_parent"
+                                            android:layout_height="48dp"
+                                            android:layout_marginRight="12dp"
+                                            android:hint="Phone(Work)"
+                                            android:id="@+id/editPhone"
+                                            android:textColor="@drawable/edittextselector"
+                                            />
+                                    </android.support.design.widget.TextInputLayout>
+                                    <ImageView
+                                        android:layout_width="48dp"
+                                        android:layout_height="48dp"
+                                        android:layout_marginTop="5dp"
+                                        android:padding="15dp"
+                                        android:src="@drawable/ic_communication_stay_current_portrait"
+                                        android:background="@android:color/transparent"
+                                        android:layout_gravity="left|top" />
+                                </FrameLayout>
+
+
+
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <android.support.design.widget.TextInputLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="48dp"
+                                        android:textColorHint="@color/text_hint"
+                                        >
+                                        <EditText
+                                            android:layout_width="match_parent"
+                                            android:layout_height="48dp"
+                                            android:layout_marginRight="12dp"
+                                            android:hint="Website"
+                                            android:id="@+id/editWebsite"
+                                            android:textColor="@drawable/edittextselector"
+                                            />
+                                    </android.support.design.widget.TextInputLayout>
+
+                                    <ImageView
+                                        android:layout_width="48dp"
+                                        android:layout_height="48dp"
+                                        android:layout_marginTop="5dp"
+                                        android:padding="15dp"
+                                        android:src="@drawable/ic_action_language"
+                                        android:background="@android:color/transparent"
+                                        android:layout_gravity="left|top"
+                                        />
+                                </FrameLayout>
+
+
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <android.support.design.widget.TextInputLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="48dp"
+                                        android:textColorHint="@color/text_hint"
+                                        >
+                                        <EditText
+                                            android:layout_width="match_parent"
+                                            android:layout_height="48dp"
+                                            android:layout_marginRight="12dp"
+                                            android:hint="Address"
+                                            android:id="@+id/editAddress"
+                                            android:textColor="@drawable/edittextselector"
+                                            />
+                                    </android.support.design.widget.TextInputLayout>
+                                    <ImageView
+                                        android:layout_width="48dp"
+                                        android:layout_height="48dp"
+                                        android:layout_marginTop="5dp"
+                                        android:padding="15dp"
+                                        android:src="@drawable/ic_action_room"
+                                        android:background="@android:color/transparent"
+                                        android:layout_gravity="left|top" />
+                                </FrameLayout>
+
+                        </LinearLayout>
+
+
+                </FrameLayout>
+        </com.melnykov.fab.ObservableScrollView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/generateqrcodefragment"
+        />
+
+    <com.melnykov.fab.FloatingActionButton
+        android:id="@+id/fabGenerateQr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        app:fab_colorNormal="@color/primary"
+        android:src="@drawable/ic_qrcode"
+        android:layout_margin="16dp"
+        />
+
+</FrameLayout>

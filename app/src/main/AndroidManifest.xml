@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.meet" >
+
+    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".FlexibleSpaceWithImageScrollViewActivity"
+            android:label="@string/title_activity_flexible_space_with_image_scroll_view"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name=".BaseActivity"
+            android:label="@string/title_activity_base"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name=".ParallaxToolbarScrollViewActivity"
+            android:label="@string/title_activity_parallax_toolbar_scroll_view"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".UserQrGeneratorActivity"
+            android:label="@string/title_activity_user_qr_generator"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name=".SimpleScannerActivity"
+            android:label="@string/simple_scanner_activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppOverlayTheme" >
+        </activity>
+        <activity
+            android:name=".CropActivity"
+            android:label="@string/title_activity_crop" >
+        </activity>
+    </application>
+
+</manifest>
